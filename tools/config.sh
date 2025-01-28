@@ -1,9 +1,9 @@
 #!/bin/bash
 
-export IDF_COMMIT="cfea4f7c98"
+export IDF_COMMIT="fb25eb02eb"
 export IDF_BRANCH="release/v5.3"
-export AR_REPO_COMMIT="9eb7dc6f"
-export TINYUSB_REPO_COMMIT="249556360"
+export AR_REPO_COMMIT="b381360b"
+export TINYUSB_REPO_COMMIT="2d7d1070f"
 
 if [ -z $IDF_PATH ]; then
     export IDF_PATH="$PWD/esp-idf"
@@ -14,7 +14,7 @@ if [ -z $IDF_BRANCH ]; then
 fi
 
 if [ -z $AR_PR_TARGET_BRANCH ]; then
-    AR_PR_TARGET_BRANCH="master"
+    AR_PR_TARGET_BRANCH="idf-release/v5.3"
 fi
 
 if [ -z $IDF_TARGET ]; then
