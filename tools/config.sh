@@ -2,7 +2,7 @@
 
 export IDF_COMMIT="fb25eb02eb"
 export IDF_BRANCH="release/v5.3"
-export AR_REPO_COMMIT="b381360"
+export AR_REPO_COMMIT="b381360b7911a3c01e2763bedf1f4931cbf57545"
 export TINYUSB_REPO_COMMIT="2d7d1070f"
 
 if [ -z $IDF_PATH ]; then
