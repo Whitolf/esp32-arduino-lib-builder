@@ -314,7 +314,7 @@ if [ "$BUILD_TYPE" = "all" ]; then
     ibr=$(git describe --all 2>/dev/null)
     ic=$(git -C "$IDF_PATH" rev-parse --short HEAD)
     popd
-    python3 tools/gen_pioarduino_manifes.py -o "$TOOLS_JSON_OUT/" -s "$ibr" -c "$ic"
+    python3 ./tools/gen_pioarduino_manifest.py -o "$TOOLS_JSON_OUT/" -s "$ibr" -c "$ic"
     # python3 ./tools/gen_platformio_manifest.py -o "$TOOLS_JSON_OUT/" -s "$IDF_BRANCH" -c "$IDF_COMMIT"
     if [ $? -ne 0 ]; then exit 1; fi
 fi
